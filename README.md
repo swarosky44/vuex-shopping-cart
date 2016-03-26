@@ -1,6 +1,6 @@
 # vuex-shopping-car
 
-> vuex
+> vuex练手DEMO-购物车
 
 ## Build Setup
 
@@ -24,5 +24,8 @@ npm run e2e
 npm test
 ```
 
+tips:
+如果 `npm install` 遇见 `chromedriver` 无法安装，建议翻墙安装。
+或者通过 `nrm` 切换源到taobao进行安装。
+
 For detailed explanation on how things work, checkout the [guide](https://github.com/vuejs-templates/webpack#vue-webpack-boilerplate) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
-# vuex-shopping-cart
