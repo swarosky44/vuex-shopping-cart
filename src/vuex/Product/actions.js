@@ -15,7 +15,10 @@ export const getProducts = ({dispatch}) => {
   dispatch(types.GET_ALL_PRO, products)
 }
 
-export const addToCart = ({dispatch}, product) => {
+export const addToCart = ({state, dispatch}, product) => {
+  if (!state.product.all.length) {
+    dispatch(types.GET_ALL_PRO, getAllPro())
+  }
   if (product.num > 0) {
     dispatch(types.ADD_TO_CART, product)
   }

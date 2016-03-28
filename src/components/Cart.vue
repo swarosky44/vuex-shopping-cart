@@ -27,7 +27,7 @@
         count: ({cart}) => {
           let total = 0
           cart.products.forEach(ele => {
-            total = ele.quantity * ele.price
+            total += ele.quantity * ele.price
           })
           return total
         }
